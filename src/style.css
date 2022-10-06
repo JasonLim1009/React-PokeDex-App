@@ -1,0 +1,250 @@
+* {
+    margin: 0px;
+  }
+  
+  nav {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .navbar-image {
+    width: 160px;
+  }
+  
+  .searchbar-container {
+    display: flex;
+    margin: 0px 10px;
+    padding: 0;
+    align-items: center;
+    flex: 1;
+    align-items: stretch;
+  }
+  
+  .searchbar {
+    background: white;
+    padding-right: 20px;
+    flex: 1;
+  }
+  
+  .searchbar input {
+    padding: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+  }
+  
+  .searchbar input:hover {
+    background: rgb(245, 245, 245);
+  }
+  
+  .searchbar input:focus {
+    outline: none;
+  }
+  
+  .searchbar-btn button {
+    background-image: -webkit-linear-gradient(65deg, #0833c0, #e63232);
+    border: none;
+    border-radius: 10px;
+    height: 100%;
+    color: white;
+    padding: 10px 12px;
+    margin-left: 20px;
+    box-shadow: 0 3px #09296d;
+  }
+  
+  .searchbar-btn button:hover {
+    background-color: #0833c0;
+  }
+  
+  .searchbar-btn button:active {
+    box-shadow: none;
+    transform: translateY(2px);
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .pokedex-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+    padding: 0px 10px 20px 10px;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .pokedex-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .pokedex-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .footer__socials {
+      margin-bottom: 2.5rem;
+    }
+  }
+  
+  .pokemon-card {
+    display: flex;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    color: #0833c0;
+    background-color: rgb(212, 230, 250);
+  }
+  
+  .pokemon-img-container {
+    padding: 0px 5px;
+  }
+  
+  .pokemon-img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .pokemon-type {
+    display: flex;
+  }
+  
+  .pokemon-type-text {
+    margin-right: 10px;
+    text-transform: capitalize;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+    flex: 1;
+  }
+  
+  .card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-top h3 {
+    text-transform: capitalize;
+  }
+  
+  .pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .App {
+    font-family: sans-serif;
+  }
+  
+  .icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .pagination-btn {
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin: 0px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 3px rgb(129, 129, 129);
+  }
+  
+  .pagination-btn:hover {
+    background-color: rgb(70, 70, 70);
+  }
+  
+  .pagination-btn:active {
+    box-shadow: none;
+    transform: translateY(2px);
+  }
+  
+  .pokemon-heart-btn {
+    border: none;
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pokemon-heart-btn:hover {
+    background-color: #e2e2e2;
+  }
+  
+  .pokemon-heart-btn:active {
+    box-shadow: none;
+    transform: translateY(2px);
+  }
+  
+  .not-found-text {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 20px;
+  }
+  
+  footer {
+    font-family: inherit;
+    background-color: #363636;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  footer a {
+    color: #e58112;
+  }
+  
+  footer a:hover {
+    color: #b66100;
+  }
+  
+  .footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+  
+  .footer__socials a {
+    background: var(--color-bg);
+    color: var(--color-white);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    border: 1px solid transparent;
+  }
+  
+  .footer__socials a:hover {
+    background: transparent;
+    color: #e58112;
+    border-color: var(--color-bg);
+  }
+  
