@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-
+![Screenshot_1](https://user-images.githubusercontent.com/107684179/194292658-664af6d6-f4f4-4c1e-9bbe-481373525a9f.png)
 
 npm start
 npm i axios
